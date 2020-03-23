@@ -1,0 +1,287 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  font-family: 'Roboto', sans-serif;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  /* list-style: square outside; */
+  list-style-type: circle;
+  padding: 10px;
+}
+
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+header {
+  background-color: #FFF171;
+  height: 60px;
+  display: flex;
+  width: 100%;
+}
+
+/* Стили невидимого блока №3 */
+
+.right, .left {
+  width: 50%;
+  height: inherit;
+}
+
+.left:hover nav {
+  display: block;
+}
+
+nav {
+  max-width: 250px;
+  margin-left: 50px;
+  display: none;
+}
+
+nav:hover .level-1 {
+  display: block;
+}
+
+.level-2 {
+  display: none;
+}
+
+.level-1:hover .level-2 {
+  display: block;
+}
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.product-info {
+  height: 50px;
+  background-color: #ECF5F4;
+  border-bottom: 2px solid #E2E2E2;
+  align-items: center;
+  justify-content: space-around;
+  display: none;
+}
+
+.model {
+  width: 400px;
+  text-align: center;
+}
+
+
+.cards {
+  display: flex;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 2px solid #e2e2e2;
+  border-radius: 5px;
+  width: 300px;
+  height: 415px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  transition: all .1s linear;
+}
+
+.product-code {
+  color: #8b8b8b;
+  padding: 10px 0px 0px 10px;
+  order: 0;
+}
+
+.product-img {
+  text-align: center;
+  /* margin: 0 auto; */
+  height: 130px;
+} 
+
+.product-title, .product-description {
+  padding: 0 15px
+}
+
+.product-title {
+  color: #47C8FF;
+  font-weight: 500;
+  font-size: 16;
+}
+
+.product-description {
+  min-height: 60px
+}
+
+.change-title {
+  display: none;
+  margin: 0 auto;
+}
+
+.change-title input {
+  border: 2px solid #47C8FF;
+  height: 30px;
+  width: 200px;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.change-btn {
+  width: 70px;
+  height: 30px;
+  background: transparent;
+  border: 2px solid#47C8FF;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+.change-btn:hover {
+  background-color: #47C8FF;
+  color: #ffffff;
+  transition: all .4s linear;
+}
+
+.visible{
+  display: none;
+}
+
+.product-price {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 40px;
+}
+
+.product-price .btn-hover {
+  width: 230px;
+  height: 40px;
+  color: #FF6767;
+  background: none;
+  border: 2px solid #FF6767;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+.product-price .add-basket {
+  width: 100px;
+  height: 40px;
+}
+
+.card-hover:hover {
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+  transition: all .4s linear;
+}
+
+.card .btn-hover:hover {
+  background-color: #FF6767;
+  color: #ffffff;
+  transition: all .4s ease-in;
+}
+
+.drop_list{
+  width: 170px;
+}
+
+.drag-enter {
+  transition: all .1s linear;
+  /* opacity: .3; */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.hide {
+  transition: all .1s linear;
+  opacity: 0;
+}
+
+img {
+  height: 100px;
+  object-fit: contain;
+}
+
+.drop{
+  opacity: 1;
+  transition: all .1s linear;
+}
+
+/* Стили при наведении на правую часть шапки */
+@media (max-width: 816px) {
+  .cards {
+    justify-content: center;
+  }
+}
+
